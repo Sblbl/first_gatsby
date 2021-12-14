@@ -1,7 +1,20 @@
 module.exports = {
-  siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "second_gatsby",
-  },
-  plugins: ["gatsby-plugin-sass"],
+	siteMetadata: {
+		siteUrl: 'https://www.yourdomain.tld',
+		title: 'Gatsby Frankenstein',
+	},
+	plugins: [
+		'gatsby-plugin-sass', 
+		'gatsby-plugin-image',
+    	'gatsby-plugin-sharp', 
+    	{
+    		resolve: `gatsby-plugin-google-fonts`, 
+    		options: {
+    			fonts: [
+    				`IBM Plex Sans\:300,700`
+    			],
+    			display: 'swap'
+    		} 
+    	}
+	],
 };
